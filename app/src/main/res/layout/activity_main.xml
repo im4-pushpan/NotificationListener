@@ -20,13 +20,43 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context=".MainActivity">
+                tools:context=".MainActivity"
+                android:padding="16dp">
+
+    <EditText
+            android:id="@+id/editText_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginBottom="8dp" android:layout_alignParentEnd="true" android:layout_marginEnd="85dp"
+            android:layout_alignParentStart="true" android:layout_marginStart="81dp" android:layout_marginTop="153dp"
+            android:layout_alignParentTop="true"/>
+    <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_below="@id/editText_username"
+            android:layout_marginTop="28dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="84dp" android:layout_alignParentEnd="true" android:layout_marginEnd="84dp"/>
+
+    <Button
+            android:id="@+id/button_login"
+            android:layout_width="183dp"
+            android:layout_height="59dp"
+            android:text="Login"
+            android:layout_below="@id/editText_password"
+            android:layout_marginBottom="16dp" android:layout_marginTop="54dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="132dp" android:layout_alignParentEnd="true" android:layout_marginEnd="143dp"/>
 
     <Button
             android:id="@+id/button_request_access"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="278dp"
+            android:layout_height="67dp"
             android:text="Request Notification Access"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="329dp"
-            android:layout_alignParentEnd="true" android:layout_marginEnd="96dp"/>
+            android:layout_alignParentBottom="true" android:layout_marginBottom="196dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="55dp" android:layout_alignParentStart="true"
+            android:layout_marginStart="62dp"
+            android:visibility="gone"/>
 </RelativeLayout>
